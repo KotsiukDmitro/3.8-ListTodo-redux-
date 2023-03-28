@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+  width: 50%;
+  height: 50%;
+  border: 1px solid red;
+  margin: 50px auto;
+  padding: 30px;
+  box-shadow: 3px 3px 31px 13px rgba(165, 201, 201, 1);
+  border-radius: 5px;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: rgb(25, 25, 207);
+}
+
+.inputTodo {
+  width: 80%;
+  height: 30px;
+  border: 1px solid rgb(82, 231, 82);
+  border-radius: 3px 0 0 3px;
+  border-right: none;
+  outline: none;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+.textTodo {
+  display: flex;
+  margin-top: 30px;
+
+}
+
+.btn {
+  width: 80px;
+  height: 30px;
+  outline: none;
+  border: 1px solid rgb(167, 89, 241);
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  flex: 1;
+}
+
+.list {
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  padding: 10px 20px 0 20px;
+  flex: 1;
+  color: black;
+
+}
+
+.clear {
+  display: flex;
+}
+
+.btn-clear {
+  margin: 20px auto;
+  border: none;
+  outline: none;
+  background-color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: brown;
+  font-size: 1rem;
+}
+
+input:checked+span {
+  text-decoration: line-through;
+}
+
+.text-todo {
+  margin-left: 10px;
+}
+
+.icon {
+  color: red;
+  margin-left: 10px;
+}
+
+.icon-pen {
+  color: green;
+  margin-left: auto;
+}
+
+.cursor {
+  cursor: pointer;
+}
