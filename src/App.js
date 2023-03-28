@@ -54,7 +54,7 @@ function App() {
     if (todoEdit.textCurrent === '') {
       remove(todoEdit.idCurrent)
     } else {
-      setTodoEdit(dispatch(edit({ todoEdit })))
+      setTodoEdit(dispatch(edit({ id: todoEdit.idCurrent, text: todoEdit.textCurrent })))
     }
     setTodoEdit({})
   }
