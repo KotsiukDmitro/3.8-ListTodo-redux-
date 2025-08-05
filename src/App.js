@@ -1,7 +1,7 @@
 
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
+import { faPen, faTrash } from '@fortawesome/free-solid-svg-icons';
 import { addTodo, removeTodo, removeAllTodo, toggleComplete, edit } from './store/todoSlice';
 import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -77,8 +77,8 @@ function App() {
               {item.id !== todoEdit.idCurrent
                 ? <><input type='checkbox' className='cursor' checked={item.completed} onChange={() => toggle(item.id)}></input>
                   <span className='text-todo'>{item.text}</span>
-                  <FontAwesomeIcon icon={solid("pen")} className=' icon icon-pen cursor' onClick={() => editTodo(item.id, item.text)} />
-                  <FontAwesomeIcon icon={solid("trash")} className='icon cursor' onClick={() => remove(item.id)} /></>
+                  <FontAwesomeIcon icon={faPen} className=' icon icon-pen cursor' onClick={() => editTodo(item.id, item.text)} />
+                  <FontAwesomeIcon icon={faTrash} className='icon cursor' onClick={() => remove(item.id)} /></>
                 : <><input type='text' value={todoEdit.textCurrent} onChange={saveEditTodo}></input>
                   <button onClick={save} className='cursor'>save</button></>
               }
